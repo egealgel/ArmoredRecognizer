@@ -1,12 +1,14 @@
-# Armored Vehicle Recognizer
 
+
+https://github.com/user-attachments/assets/893b3abe-55dd-407d-bc53-ad7948deb940
+
+# Armored Vehicle Recognizer
 Real-time military armored vehicle detection using **YOLOv11** trained on 16,000+ annotated images.
 
-## Demo
+Two Engineering Vehicles correctly detected. 
 
-https://github.com/user-attachments/assets/mev1_output.mp4
+Note: The model is trained on Eastern/Russian military vehicle imagery. NATO vehicles (Leopard 2, M1 Abrams, LAV) are not represented in the training dataset and may be misclassified.
 
-> Two tanks correctly detected through heavy dust and water splash conditions.
 
 ## Results
 
