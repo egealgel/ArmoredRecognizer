@@ -1,0 +1,39 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Datasets — too large for git
+data/raw/
+data/merged/
+
+# Training runs — keep only final weights
+runs/train/armored*/weights/epoch*.pt
+runs/train/armored*/weights/last.pt
+runs/detect/
+
+# Cache files
+*.cache
+
+# Debug/intermediate test frames
+tests/*_frame*.jpg
+tests/debug_frame.jpg
+
+# Misc output videos (keep mev1_output only)
+tests/apc1_output.mp4
+tests/lav*.mp4
+tests/lav*_output.mp4
+tests/lav*_mid.jpg
+tests/tank*_output.mp4
+tests/video1_output.mp4
+tests/video2_output.mp4
+tests/video1*.jpg
+tests/video2*.jpg
+output.mp4
+
+# Large base model
+yolo11s.pt

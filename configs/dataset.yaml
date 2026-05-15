@@ -1,0 +1,23 @@
+# Armored Vehicle Recognizer — Dataset 1: Military Equipment
+# Source: Kaggle "Dataset military equipment"
+
+path: /Users/egealgel/Documents/ArmoredRecognizer/data/merged
+
+train: images/train
+val:   images/val
+test:  images/test
+
+nc: 11
+
+names:
+  0: TANK
+  1: IFV
+  2: APC
+  3: EV
+  4: AH
+  5: TH
+  6: AAP
+  7: TA
+  8: AA
+  9: TART
+  10: SPART
