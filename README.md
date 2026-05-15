@@ -96,3 +96,4 @@ python train.py --model yolo11s.pt --epochs 100 --device mps
 - Input size: 416×416
 - Training: 100 epochs on Apple M4 (MPS)
 - Dataset: 11,768 train / 1,680 val / 3,361 test images
+- https://www.kaggle.com/datasets/nzigulic/military-equipment
