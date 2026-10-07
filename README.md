@@ -37,8 +37,6 @@ Note: The model is trained on Eastern/Russian military vehicle imagery. NATO veh
 
 ## Classes
 
-The model detects 11 military vehicle and aircraft categories:
-
 | ID | Class | Full Name |
 |---|---|---|
 | 0 | TANK | Main Battle Tank |
@@ -53,42 +51,6 @@ The model detects 11 military vehicle and aircraft categories:
 | 9 | TART | Towed Artillery |
 | 10 | SPART | Self-Propelled Artillery |
 
-## Setup
-
-```bash
-git clone https://github.com/YOUR_USERNAME/ArmoredRecognizer.git
-cd ArmoredRecognizer
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Usage
-
-### Run on a video file
-```bash
-python infer_video.py --weights runs/train/armored-7/weights/best.pt --source your_video.mp4 --save
-```
-
-### Run on webcam
-```bash
-python infer_video.py --weights runs/train/armored-7/weights/best.pt --source 0
-```
-
-### Evaluate on test set
-```bash
-python evaluate.py --weights runs/train/armored-7/weights/best.pt
-```
-
-## Training
-
-```bash
-# Prepare dataset (YOLO or COCO format)
-python data/merge_datasets.py --datasets data/raw/dataset1 data/raw/dataset2 --output data/merged
-
-# Train
-python train.py --model yolo11s.pt --epochs 100 --device mps
-```
 
 ## Model
 
